@@ -1,0 +1,64 @@
+.services{
+    padding: 0 3rem 0 3rem;
+    display: flex;
+    height: 90vh;
+    margin-bottom: 13rem;
+    margin-top: 14rem;
+    
+}
+.s-left-side{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.s-left-side>:nth-child(1){
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.s-left-side>:nth-child(2){
+    color: var(--orange);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.s-left-side>:nth-child(3){
+    color: var(--gray);
+    font-size: 14px;
+    margin-top: 1rem;
+}
+.s-button{
+    width: 5rem!important;
+    height: 1.4rem;
+    margin: 1rem;
+}
+
+.cards{
+    position: relative;
+}
+.cards>*{
+    position: absolute;
+}
+
+.blur{
+    position: absolute;
+    width: 15rem;
+    height: 14rem;
+    z-index: -9;
+    left: 50%;
+    filter: blur(72px);
+}
+.blur1{
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    z-index: -9;
+    left: 60%;
+    filter: blur(90px);
+    top: 90%;
+}
+
+@media screen and (max-width: 480px) {
+    /* .s-left-side>:nth-child(1){
+    margin-top:-12rem;
+    } */
+}

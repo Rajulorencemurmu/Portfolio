@@ -1,0 +1,27 @@
+.toggle{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid var(--orange);
+    border-radius: 1rem;
+    padding: 2px;
+    position: relative;
+    cursor: pointer;
+}
+.toggle>*{
+    width: 1rem;
+    height: 1rem;
+    color: var(--orange);
+}
+.t-button{
+    position: absolute;
+    border-radius: 100%;
+    background: var(--orange);
+}
+
+
+@media screen and (max-width: 480px) {
+    .toggle{
+        transform: scale(0.70);
+    }
+
+}

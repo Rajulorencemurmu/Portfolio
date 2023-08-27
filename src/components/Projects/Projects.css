@@ -1,0 +1,39 @@
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+.p-name span:nth-child(1){
+    color: var(--black);
+    font-size: 3rem;
+    font-weight: bold;
+}
+.p-name span:nth-child(2){
+    color: var(--orange);
+    font-size: 3rem;
+    font-weight: bold;
+}
+.projects .swiper{
+    overflow: visible!important;
+}
+.projects-slider{
+    margin-top: 3rem;
+    width: 80%;
+}
+.projects-slider .swiper-slide{
+    width: 20rem;
+}
+.projects img{
+    width: 19rem;   
+}
+#hhfc{
+    height: 10rem;
+}
+#spfy{
+    height: 10.5rem;
+}
+#img_gal{
+    height: 10rem;
+}

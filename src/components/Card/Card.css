@@ -1,0 +1,42 @@
+.card{
+    width: 7rem;
+    height: 9rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+    background: rgba(255,255,255,0.26);
+    border: 3px solid var(--orange);
+    box-shadow: var(--boxShadow);
+    border-radius: 20px;
+    padding: 0px 26px 2rem 26px;
+    left: 150px;
+}
+.card>span:nth-child(1){
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    /* background: #a1efe6;
+    border-radius: 13px;
+    border: none;
+    padding: 4px; */
+}
+/* .c-button{
+    background: #b1efa1;
+    border-radius: 7px;
+    border: none;
+    font-weight: bold;
+} */
+.c-button:hover{
+    color: var(--gray);
+}
+.blur{
+    position: absolute;
+    width: 12rem;
+    height: 12rem;
+    z-index: -9;
+    left: 50%;
+    filter: blur(92px);
+}
