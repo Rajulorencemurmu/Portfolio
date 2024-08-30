@@ -103,5 +103,5 @@ This quote drives my passion for web development and motivates me to create impa
 Feel free to reach out if you have any questions or if you're interested in collaborating on a project!
 
 - **Email**: your-rajulorence4321@gmail.com
-- **LinkedIn**: [your-linkedin-profile]([https://linkedin.com/in/yourprofile](https://www.linkedin.com/in/raju-lorence-murmu-875628223/))
+- **LinkedIn**: [your-linkedin-profile]([https://linkedin.com/in/raju-lorence-murmu-875628223/])
 - **GitHub**: [your-github-profile](https://github.com/Rajulorencemurmu)
