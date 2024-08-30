@@ -44,16 +44,14 @@ const Contact = () => {
 
         <div className="contact-right">
             <form ref={form} onSubmit={sendEmail}>
-                <input type="text" name='user_name' className='user' placeholder='Name' required/>
-                <input type="email" name='user_email' className='user' placeholder='Email'  required/>
-                <textarea name="message" className='user' placeholder='Message' id='msg' required></textarea>
+                <input type="text" name='user_name' className='user' placeholder='Your Name' required/>
+                <input type="email" name='user_email' className='user' placeholder='Your Email'  required/>
+                <textarea name="message" className='user' placeholder='Your Message' id='msg' required></textarea>
                 {/* <button className='button i-button'>Hire me</button> */}
 
                 <input type="submit" value="Send" className='button1'/>
                 {/* <button type='submit' value="Send" className='button'>Send</button> */}
                 <span>{done && thankyou()}</span>
-                <div className="blur c-blur1" style={{background:'var(--purple'}}></div>
-                <div className="blur c-blur2" style={{background:'var(--orange',left:'28rem'}} ></div>
             </form>
         </div>
     </div>

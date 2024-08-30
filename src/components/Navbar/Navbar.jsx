@@ -1,26 +1,28 @@
-import {React} from 'react'
-// import { useContext } from 'react'
+import {React,useContext} from 'react'
+import { themeContext } from '../../Context'
 import './Navbar.css'
 import logo from '../../img/logo.png'
+import logo1 from '../../img/L_logo.jpg'
 import Toggle from '../Toggle/Toggle'
 import { Link } from 'react-scroll'
 // import Services from '../Services/Services'
 // import { themeContext } from '../../Context'
 
 const Navbar = () => {
-  // const theme=useContext(themeContext)
-  //   const darkMode=theme.state.darkMode
+  const theme=useContext(themeContext)
+    const darkMode=theme.state.darkMode
   return (
     <div className="n-wrapper">
        <div className="n-left">
        <div className="n-logo">
         <a href="/">
         <img src={logo} alt="My Portfolio" id='logoImage'/>
-        {/* <img src={logo} alt="My Portfolio" id='logoImage'/> */}
+
+        {/* <img src={logo1} alt="My Portfolio" id='logoImage'/> */}
         </a>
         </div>
 
-        {/* <div className="n-name">Raju Lorence</div> */}
+        {/* <div className="n-name">lorence</div> */}
 
           <Toggle/>
       </div>

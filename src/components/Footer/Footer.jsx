@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="f-icons">
             <a href="https://instagram.com/_life_lover_00?igshid=NmQ2ZmYxZjA="><Insta color='white' size='3rem' /></a>
             <a href="https://www.facebook.com/rajulorencemurmu"><Facebook color='white' size='3rem' /></a>
-            <a href="https://github.com/Rajulorencemurmu/profile"><Github color='white' size='3rem' /></a>
+            <a href="https://github.com/Rajulorencemurmu/Rajulorencemurmu"><Github color='white' size='3rem' /></a>
             <a href="https://twitter.com/raju_lorence?t=eQSaj-CWu62T1n02a6MThg&s=08"><Twitter color='white' size='3rem'/></a>
         </div>
     </div>
