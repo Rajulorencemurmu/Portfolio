@@ -1,167 +1,93 @@
-.contact-form{
-    padding: 0 3rem 0 3rem;
-    display: flex;
-    height: 80vh;
-    margin-top: 10rem;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.contact-form {
+  padding: 0 3rem 0 3rem;
+  display: flex;
+  height: 80vh;
+  margin-top: 10rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.contact-left{
-    display: flex;
-    flex-direction: column;
+.contact-left {
+  display: flex;
+  flex-direction: column;
 }
-.contact-left>span:nth-child(1){
-    color:var(--black);
-    font-weight: bold;
-    font-size: 3rem;
+.contact-left > span:nth-child(1) {
+  color: var(--black);
+  font-weight: bold;
+  font-size: 3rem;
 }
-.contact-left>span:nth-child(2){
-    color: var(--orange);
-    font-weight: bold;
-    font-size: 3rem;
+.contact-left > span:nth-child(2) {
+  color: var(--orange);
+  font-weight: bold;
+  font-size: 3rem;
 }
 
 .contact-right {
-   width: 35%;
-   margin: 50px auto;
-    padding: 20px;
-    background: #ffffff;
-    border-radius: 4px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-    justify-content: 3rem;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  label {
-    font-size: 1rem;
-    margin-bottom: 6px;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    width: 80%;
-    padding: 12px;
-    border: 1.5px solid #ffc21b;
-    border-radius: 8px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    margin-left: 30px;
-    resize: vertical;
-    outline: none;
-  }
-#msg{
-  height: 6rem!important;
+  width: 35%;
+  margin: 50px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  justify-content: 3rem;
 }
-  .button1{
-    width: 5rem;
-    margin-left: 39%;
-    border-radius: 34px;
-    border: none;
-    color: white;
-    font-size: 16px;
-    padding: 10px;
-    background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
-    box-shadow: 0px 8px 15px rgba(251,161,40,0.42);
+
+form {
+  display: flex;
+  flex-direction: column;
 }
-.button1:hover{
+
+label {
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 80%;
+  padding: 12px;
+  border: 1.5px solid #ffc21b;
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  margin-left: 30px;
+  resize: vertical;
+  outline: none;
+}
+#msg {
+  height: 6rem !important;
+}
+.button1 {
+  width: 5rem;
+  margin-left: 39%;
+  border-radius: 34px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
+  box-shadow: 0px 8px 15px rgba(251, 161, 40, 0.42);
+}
+.button1:hover {
   background: white;
   cursor: pointer;
   color: var(--orange);
   border: 1px solid var(--orange);
 }
-
-
-
-
-
 
 @media screen and (max-width: 720px) {
- 
-  .contact-form{
-    padding: 0 3rem 0 3rem;
-    display: flex;
-    height: 80vh;
-    margin-top: 10rem;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.contact-left{
-    display: flex;
-    flex-direction: column;
-}
-.contact-left>span:nth-child(1){
-    color:var(--black);
-    font-weight: bold;
-    font-size: 3rem;
-}
-.contact-left>span:nth-child(2){
-    color: var(--orange);
-    font-weight: bold;
-    font-size: 3rem;
-}
-
-.contact-right {
-   width: 35%;
-   margin: 50px auto;
-    padding: 20px;
-    background: #ffffff;
-    border-radius: 4px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-    justify-content: 3rem;
+  .contact-left {
+    width: 18rem;
   }
-  
-  form {
-    display: flex;
-    flex-direction: column;
+  .contact-left > span:nth-child(1) {
+    font-size: 2.5rem;
   }
-  
-  label {
-    font-size: 1rem;
-    margin-bottom: 6px;
+  .contact-left > span:nth-child(2) {
+    font-size: 2.5rem;
   }
-  
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    width: 80%;
-    padding: 12px;
-    border: 1.5px solid #ffc21b;
-    border-radius: 8px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    margin-left: 30px;
-    resize: vertical;
-    outline: none;
+  .contact-right {
+    width: 100%;
   }
-#msg{
-  height: 6rem!important;
-}
-  .button1{
-    width: 5rem;
-    margin-left: 39%;
-    border-radius: 34px;
-    border: none;
-    color: white;
-    font-size: 16px;
-    padding: 10px;
-    background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
-    box-shadow: 0px 8px 15px rgba(251,161,40,0.42);
-}
-.button1:hover{
-  background: white;
-  cursor: pointer;
-  color: var(--orange);
-  border: 1px solid var(--orange);
-}
-
-
 }

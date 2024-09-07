@@ -1,124 +1,86 @@
-import React, { useContext } from "react";
-import "./Projects.css";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import Hhfc from "../../img/Hhfc.png";
-// import Egallery from "../../img/Egallery.png";
-import Spotify from "../../img/Spotify.png";
-// import Expensetracker from "../../img/expensetracker.png";
+import React,{useContext} from "react";
 import { themeContext } from "../../Context";
-import adminlogin from "../../img/admin-login.jpeg";
-import Rental_App from '../../img/Rental_app.png'
+import './Projects.css';
+import Slider from "react-slick";
+import Hhfc from "../../img/Hhfc.png";
+import alumni from '../../img/admin-login.jpeg'
+import spotify from '../../img/Spotify.png';
+import rental from '../../img/Rental_app.png';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
+const projectsData = [
+  {
+    title: "HHFC-NGO",
+    image: Hhfc,
+    description: "This is a description of project 1.",
+    link: "https://hhfc.in/"
+  },
+  {
+    title: "SPOTIFY CLONE",
+    image: spotify,
+    description: "This is a description of project 2.",
+    link: "https://github.com/Rajulorencemurmu/spotify-clone"
+  },
+  {
+    title: "RENTAL APP",
+    image: rental,
+    description: "This is a description of project 3.",
+    link: "https://github.com/Rajulorencemurmu/Rental_App"
+  },
+  {
+    title: "MY ALUMNI NETWORK",
+    image: alumni,
+    description: "This is a description of project 3.",
+    link: "https://github.com/Rajulorencemurmu/alumni_app-master-main"
+  }
+];
 
 const Projects = () => {
   const theme = useContext(themeContext);
-  const darkMode = theme.state.darkMode;
+    const darkMode = theme.state.darkMode;
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
+
   return (
-    <div className="projects" id="Projects">
-      <div className="p-name">
-        <span style={{ color: darkMode ? "white" : "" }}>Recent </span>
-        <span>Projects</span>
-      </div>
-      <Swiper
-        spaceBetween={30}
-        slidesPerView={2.8}
-        grabCursor={true}
-        className="projects-slider"
-      >
-        <SwiperSlide
-          style={{
-            boxShadow:
-              "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px",
-            width: 300,
-            height: 190,
-            borderRadius: "20px",
-            display: "flex", // Enable flexbox
-            flexDirection: "column", // Align items vertically
-            justifyContent: "center", // Center content vertically
-            alignItems: "center", // Center content horizontally
-          }}
-        >
-          <a href="https://hhfc.in/">
-            <img
-              src={Hhfc}
-              alt=""
-              id="hhfc"
-              style={{ width: 280, height: 150, borderRadius: "10px" }} // Add borderRadius for rounded corners
-            />
-          </a>
-        </SwiperSlide>
-
-        <SwiperSlide
-          style={{
-            boxShadow:
-              "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px",
-            borderRadius: "20px",
-            display: "flex", // Added for flexbox centering
-            justifyContent: "center", // Centers horizontally
-            alignItems: "center", // Centers vertically
-          }}
-        >
-          <a href="https://github.com/Rajulorencemurmu/alumni_app-master-main">
-            <img
-              src={adminlogin}
-              alt=""
-              style={{
-                width: 280,
-                height: 180,
-                borderRadius: "10px", // Optional for rounded corners
-              }}
-            />
-          </a>
-        </SwiperSlide>
-
-        <SwiperSlide
-          style={{
-            boxShadow:
-              "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px",
-            borderRadius: "20px",
-            display: "flex", // Added for flexbox centering
-            justifyContent: "center", // Centers horizontally
-            alignItems: "center", // Centers vertically
-          }}
-        >
-          <a href="https://github.com/Rajulorencemurmu/spotify-clone">
-            <img
-              src={Spotify}
-              alt=""
-              style={{
-                width: 300,
-                height: 180,
-                borderRadius: "10px", // Optional for rounded corners
-              }}
-            />
-          </a>
-        </SwiperSlide>
-
-        <SwiperSlide
-          style={{
-            boxShadow: "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px",
-            borderRadius: "20px",
-            display: "flex", // Added for flexbox centering
-            justifyContent: "center", // Centers horizontally
-            alignItems: "center", // Centers vertically
-          }}
-        >
-          <a href="https://github.com/Rajulorencemurmu/Rental_App">
-            <img
-              src={Rental_App}
-              alt=""
-              style={{
-                width: 300,
-                height: 180,
-                borderRadius: "10px", // Optional for rounded corners
-              }}
-            />
-          </a>
-        </SwiperSlide>
-
-
-      </Swiper>
+    <div className="projects-section">
+      <span style={{ color: darkMode ? "white" : "" }}>Recent </span>
+          <span>Projects</span>
+      <Slider {...settings}>
+        {projectsData.map((project, index) => (
+          <div className="project-card" key={index}>
+            <img src={project.image} alt={project.title} className="project-image" />
+            <div className="project-info">
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
+              <a href={project.link} className="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
+            </div>
+          </div>
+        ))}
+      </Slider>
     </div>
   );
 };

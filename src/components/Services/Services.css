@@ -61,7 +61,7 @@
     top: 90%;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 720px) {
     #Services{
         height: 20rem;
     }

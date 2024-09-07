@@ -33,7 +33,7 @@ const Services = () => {
           <b>"</b>
         </span>
 
-        <a download style={{ textDecoration: "none" }}>
+        <a href="./raju_resume1.pdf" download style={{ textDecoration: "none" }}>
           <div className="button s-button">My Resume</div>
         </a>
       </div>

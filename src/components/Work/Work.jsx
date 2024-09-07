@@ -16,7 +16,7 @@ const Work = () => {
       <div className="w-left-side">
         <span style={{color:darkMode?'white':''}}>Works for All these</span>
         <span>Brands & Clients</span>
-        <span>"You are serving a customer, not a life sentence. Learn how to enjoy your work.<br/>A customer is the most important visitor in our premises. You not <br/>dependent on us, we are dependent on you. You not an interruption<br/> to our work, you the purpose of it"<br/>
+        <span>"You are serving a customer, not a life sentence."<br/><br/> "Learn how to enjoy your work."<br/><br/>"A customer is the most important visitor in our premises.<br/>You are not dependent on us, we are dependent on you."<br/><br/>"You not an interruption to our work, you the purpose of it"<br/><br/>
         </span>
 
         <button className="button w-button">Hire me</button>
@@ -32,6 +32,12 @@ const Work = () => {
         <img src={Shopify} alt="shopify" />
         <img src={Facebook} alt="facebook" /> */}
       </div>
+      
+      <div className='circle1'></div>
+        <div className='circle2'></div>
+        <div className='circle3'></div>
+        <div className='circle4'></div>
+        <div className='circle5'></div>
       </div>
       
     </div>

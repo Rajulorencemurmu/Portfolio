@@ -17,7 +17,7 @@ const Intro = ({ userName }) => {
       <div className="i-left">
         <div className="i-name">
           <span style={{ color: darkMode ? "white" : "" }}>
-            🌟 Welcome, {userName || "Guest"}!{" "}
+            🌟 Welcome, Viewers
           </span>
           <span></span>
           <span>
