@@ -7,6 +7,8 @@ import Vector1 from "../../img/Vector1.png";
 import Vector2 from "../../img/Vector2.png";
 import My_pic from "../../img/My_pic.png";
 import { themeContext } from "../../Context";
+import { Link } from 'react-scroll'
+
 
 const Intro = ({ userName }) => {
   const theme = useContext(themeContext);
@@ -41,7 +43,7 @@ const Intro = ({ userName }) => {
             Looking forward to connecting!
           </span>
         </div>
-        <button className="button2">Hire me</button>
+        <Link spy={true} to="Contact" smooth={true}> <button className="button2">Hire me</button></Link>
         <div className="i-icons">
           <a href="https://github.com/Rajulorencemurmu?tab=repositories">
             <img src={Github} alt="Github" />

@@ -13,25 +13,25 @@ const projectsData = [
   {
     title: "HHFC-NGO",
     image: Hhfc,
-    description: "This is a description of project 1.",
+    description: "A NGO website build fully for charity and fundings for children. It was our first ever website built in HTML, Css, Js",
     link: "https://hhfc.in/"
   },
   {
     title: "SPOTIFY CLONE",
     image: spotify,
-    description: "This is a description of project 2.",
+    description: "A React and Node.js clone of Spotify. Users can browse music, create playlists, and listen to tracks.",
     link: "https://github.com/Rajulorencemurmu/spotify-clone"
   },
   {
     title: "RENTAL APP",
     image: rental,
-    description: "This is a description of project 3.",
+    description: "A platform for renting Bikes and Cars for trips. We created it using react native, the web version is also available do check it out.(ONGOING PROJECT)",
     link: "https://github.com/Rajulorencemurmu/Rental_App"
   },
   {
     title: "MY ALUMNI NETWORK",
     image: alumni,
-    description: "This is a description of project 3.",
+    description: "It was a 3rd year project, I used react native to build this. This app includes chats, location tracking, events, games and many more.",
     link: "https://github.com/Rajulorencemurmu/alumni_app-master-main"
   }
 ];
@@ -66,7 +66,7 @@ const Projects = () => {
   };
 
   return (
-    <div className="projects-section">
+    <div className="projects-section" id="Projects">
       <span style={{ color: darkMode ? "white" : "" }}>Recent </span>
           <span>Projects</span>
       <Slider {...settings}>
